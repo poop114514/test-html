@@ -2,6 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <style>
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            filter: blur(3px)
+        }
+        #content {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
     <title>.</title>
     <link rel="stylesheet" href="https://static0.xesimg.com/talcode/bootstrap4.6/css/bootstrap.min.css">
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
@@ -10,6 +25,9 @@
     <link rel="shortcut icon" sizes="48x48" href="/img/gui/question-square.svg">
 </head>
 <body>
+    <video id="video-background" autoplay loop muted>
+    <source src="/img/Zongli zindabad.mp4" type="video/mp4">
+    </video>
     <h1>网站施工中......</h1>
     <div class="alert alert-primary" role="alert">
         This website was dead, go away!!!
