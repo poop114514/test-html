@@ -5,8 +5,13 @@
     <title>陈师傅的个人blog</title>
     <style>
         @font-face{
-          font-family: 'Minecraft';
-          src: url(/fonts/Minecraft.ttf);
+            font-family: 'Minecraft';
+            src: url(/fonts/Minecraft.ttf);
+        .custom-hr {
+            height: 3px; /* 设置分割线高度 */
+            background-image: linear-gradient(to right, transparent 10%, rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.2) 80%, transparent 90%);
+            border: none; /* 移除默认边框 */
+            margin: 0px 0; /* 可选：设置分割线的上下间距 */
     </style>
     <link rel="stylesheet" href="https://static0.xesimg.com/talcode/bootstrap4.6/css/bootstrap.min.css">
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
@@ -22,7 +27,7 @@
     <!--别样的分界线-->
     <nav class="topnav navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <div class="container-fluid">
-    	<a class="navbar-brand" href="./index.html"><i class="bi bi-star"></i>我是<strong>导航条</strong></a>
+    	<a class="navbar-brand" href="./index.html"></i>我是<strong>导航条</strong></a>
     	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
     	<span class="navbar-toggler-icon"></span>
     	</button>
@@ -87,14 +92,14 @@
                 <h6>-</h6>
                 <font face="Minecraft" size=4>我就是我，没什么好介绍的（陈师傅）</font>
             </div>
-            <div style="text-align:right">
-                <form action="#">
-                    <input type="image" src="/img/gui/chevron-double-.svg" width="50"/>
-                </form>
-            </div>
         </section>
     <div class="container pt-3 pb-5 mb-5" data-aos="fade-up">
-        <hr style="height:1px;border:none;border-top:1px solid black;" />
+        <div style="text-align:right">
+            <form action="#">
+                <input type="image" src="/img/gui/chevron-double-.svg" width="50"/>
+            </form>
+        </div>
+        <hr class="custom-hr">
         <div style="text-align:center">
             <div class="row">
                 <div class="col-3">
